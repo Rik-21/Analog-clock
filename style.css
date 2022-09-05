@@ -1,0 +1,67 @@
+html{
+    /* background-color: #000;
+    opacity: 0.5;
+    background: url(); */
+    background:  url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=400);
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    background-color: rgb(139, 134, 134);
+    opacity: 0.6;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+
+}
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 0 0px 4px rgba(0,0,0,0.1), inset 0 0 0 3px #EFEFEF ,inset 0 0 10px black, 0 0 10px rgba(0,0,0,0.2);
+}
+.clock-face{
+    position: relative;
+    width: 100%;
+    height:100%;
+    transform: translateY(-3px);
+}
+.hand{
+    width:50%;
+    height: 6px;
+    background: black;
+    position:absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    /* transition: all 0.5s; */
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+.hour-hand{
+    background: rgb(88, 13, 88);
+}
+.min-hand{
+    background: rgb(46, 75, 3);
+}
+/* .hour-hand{
+    width: 30%;
+    position:absolute;
+    top: 50%;
+    transform-origin: 134%;
+    color: blueviolet;
+}
+.min-hand{
+    width: 40%;
+    position:absolute;
+    top: 53%;
+    transform-origin: 114%;
+    color: chocolate;
+} */
